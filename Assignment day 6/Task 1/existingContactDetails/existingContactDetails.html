@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Contact Details">
+        <div class="slds-p-horizontal_medium">
+            <ul>
+                <template for:each={contacts.data} for:item="contact">
+                    <li key={contact.Id}><b>&#8226; Contact Name</b>: {contact.Name}</li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
