@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record Creation</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="objectApiName" type="String" label="Object API Name" role="inputOnly"/>
+            <property name="fields" type="String" label="fields List" default="FirstName,LastName" role="inputOnly"/>
+            <property name="title" type="String" label="Title" role="inputOnly"/>
+            <property name="message" type="String" label="Message" role="inputOnly"/>
+            <property name="parentRecordId" type="String" label="parent Record Id" role="inputOnly"/>
+            <property name="parentFieldAPIName" type="String" label="Parent Field Name" role="inputOnly"/>
+            <property name="recordIdAfterSave" type="String" label="Record Id After Save" role="outputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
