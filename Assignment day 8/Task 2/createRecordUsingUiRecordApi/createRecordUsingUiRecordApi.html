@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create Record Using lightning/uiRecordApi" icon-name="standard:record">
+        <div class="slds-p-horizontal_medium">
+            <lightning-input label="Account Name" name="name" value={accountName} onchange={handleChange}></lightning-input>
+            <lightning-input label="Rating" name="rating" value={accountRating} onchange={handleChange}></lightning-input>
+            <lightning-button label="Create Account" onclick={createAccount} class="slds-m-top_medium" variant="brand">
+            </lightning-button>
+        </div>
+        
+</lightning-card>
+</template>
